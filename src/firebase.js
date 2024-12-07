@@ -41,7 +41,7 @@ const signup = async (name, email, password) => {
 // login func
 const login = async(email,password) => {
     try {
-        const res = await signInWithEmailAndPassword(auth, email,password)
+         await signInWithEmailAndPassword(auth, email,password)
     } catch (error) {
         console.log(error);
         alert(error)
