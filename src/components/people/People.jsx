@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import './people.css'
+import './People.css'
 const People = () => {
     const [cast,setCast] = useState([]);
     const [notFoundImg,setNotFoundImg] = useState()
