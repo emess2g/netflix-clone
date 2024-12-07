@@ -1,0 +1,28 @@
+.people{
+    /* display: flex; */
+    margin-bottom: 8px;
+    margin-top: 30px;
+    overflow-x: scroll;
+}
+
+.people h2 {
+    margin-bottom: 8px;
+}
+
+.people-list{
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.people::-webkit-scrollbar{
+    display: none;
+}
+
+.people img {
+    width: 240px;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+
