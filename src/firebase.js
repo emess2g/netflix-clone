@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { addDoc, collection, getFireStore} from 'firebase/firestore'
+import { addDoc, collection, getFirestore} from 'firebase/firestore'
 
 
 const firebaseConfig = {
@@ -18,12 +18,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
-const db = getFireStore(app);
+const db = getFirestore(app);
 
 // signup func
 const signup = async (name, email, password) => {
     try {
-        const res = await createUserWithEmailAndPassword(name,email,password);
+        const res = await createUserWithEmailAndPassword(auth, email, password);
         const user = res.user;
         await addDoc(collection(db,'user'),{
             uid: user.uid,
