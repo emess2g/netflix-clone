@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { addDoc, collection, getFirestore} from 'firebase/firestore'
 
 
@@ -50,7 +50,7 @@ const login = async(email,password) => {
 
 // logout func
 const logout = () => {
-    signup(auth);
+    signOut(auth)
 }
 
 export {auth, db, signup, login, logout}
