@@ -85,3 +85,28 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+.loading-spinner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/background_banner.jpg);
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.loading-spinner img {
+    width: 200px;
+}
+
+@media (max-width:500px) {
+    .login{
+        padding: 15px 5%;
+    }
+    .login-form{
+        padding: 20px;
+        margin-top: 30px;
+    }
+}

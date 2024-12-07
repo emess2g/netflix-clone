@@ -26,3 +26,18 @@
     cursor: pointer;
  }
 
+@media (max-width:500px) {
+    .people{
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .people h2{
+        font-size: 17px;
+    }
+    .people img{
+        width: 125px;
+    }
+    .people-list{
+        margin-bottom: 10px;
+    }
+}
