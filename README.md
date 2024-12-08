@@ -1,8 +1,22 @@
-# React + Vite
+NETFLIX CLONE
+Netflix is online streaming movies,tv shows,podcast and gaming platform, accumulating over millions user. With Knowledge of React js, i took upon myself to build a clone of it.
+Where i used TMDB database to display various categories of movies. Again, used Firebase USER AUTHENTICATION and API integration.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+USER EXPERINCE
+signup, signin, logout features.
+browse various movie categories.
+cross-browser accessibility.
+Fully Responsive - looks great all devices.
+Trailer Player Feature.
 
-Currently, two official plugins are available:
+TOOLS USED
+REACT JS / VITE
+FIREBASE - user authenication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PACKAGES INSTALLED
+react-router-dom
+react-toastify
+react-firbase-hooks
+firebase
+
+Preview live : https://emessvid.netlify.app
